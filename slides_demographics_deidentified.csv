@@ -1,0 +1,108 @@
+PID,testing_location,experimenter,child_age_years,child_gender,parent1_race,parent1_occupation,parent1_education,parent1_gender,household_size,household_income,parent2_race,parent2_occupation,parent2_education,parent2_gender,child_race,prior_psych_participation
+DA01,Zoom,Rachael,4,F,Asian/Pacific Islander,Clinical Pharmacist,Graduate degree,Female,5,.,White,Registered Nurse,College degree,Male,Multi-racial/ethnic,Yes
+DA02,Parks,Josie,4,M,South Asian/Indian,Physician,Graduate degree,Female,4,"$250,001-$500,000",South Asian/Indian,Physician,Graduate degree,Male,South Asian/Indian,Yes
+DA03,Parks,Josie,4,M,White,Wildlife Biologist,Graduate degree,Female,3,"$80,001-$100,000",Asian/Pacific Islander,Wildlfe Biologist,Graduate degree,Male,Multi-racial/ethnic,No
+DA04,Parks,Rachael,5,M,Other,.,H.S. degree,Female,4,.,.,.,.,.,.,No
+DA05,Zoom,Josie,5,F,White,stay at home mom,Graduate degree,Female,4,"$150,001-$200,000",White,IT,Some college,Male,White,Yes
+DA06,Parks,Josie,4,M,Black/African-American,.,College degree,Male,4,"$100,001-$150,000",.,.,.,.,.,.
+DA07,Parks,Josie,4,M,White,Self-employed,College degree,Female,5,"$150,001-$200,000",White,Self-Employed,College degree,Male,White,No
+DA08,Parks,Josie,4,F,White,Stay at home parent,Graduate degree,Female,3,"$150,001-$200,000",South Asian/Indian,Banker,Graduate degree,Male,Multi-racial/ethnic,No
+DA09,Parks,Josie,5,M,White,Teacher,Graduate degree,Female,4,"$150,001-$200,000",White,Teacher,Graduate degree,Male,White,No
+DA10,Parks,Josie,5,M,Asian/Pacific Islander,Planner,Graduate degree,Female,.,"$100,001-$150,000",White,Planner,Graduate degree,Male,Multi-racial/ethnic,No
+DA11,Zoom,Rachael,4,F,South Asian/Indian,Administrator,Graduate degree ,Female,3,"$100,001-$150,000",South Asian/Indian,Professor,Graduate degree,Male,South Asian/Indian,Yes
+DA12,Zoom,Rachael,4,M,White,Teacher,College degree,Female,4,"$80,001-$100,000",White,Teacher,College degree,Male,White,No
+DA13,Zoom,Rachael,4,F,White,Stay at home mom,College degree,Female,4,"$200,001-$250,000",White,Project manager,College degree,Male,White,Yes
+DA14,Zoom,Josie,5,M,White,I choose not to answer this question,Graduate degree,Female,I choose not to answer this question,.,White,I choose not to answer this question,Graduate degree,Male,White,Yes
+DA15,Zoom,Josie,4,F,Multi-racial/ethnic, Social worker,Graduate degree,Female,5,"$100,001-$150,000",White, Police officer,Some college,Male,White, No
+DA16,Zoom,Kaiah,5,F,White,Teacher,Graduate degree,Female,5,"$100,001-$150,000",Hispanic,Police officer,College degree,Male,Hispanic,Yes
+DA17,Museum,Josie,5,F,.,.,.,.,.,.,.,.,.,.,.,.
+DA18,Zoom,Josie,4,F,White,Science Librarian,Graduate degree,Female,3,"$80,001-$100,000",White,homemaker,Some college,Male,White,Yes
+DA19,Zoom,Kaiah,5,F,Asian/Pacific Islander,.,Graduate degree,Female,3,"$200,001-$250,000",White,.,Graduate degree,Male,Multi-racial/ethnic,Yes
+DA20,Zoom,Griffin,5,F,White,Stay at home mom,Graduate degree,Female,4,"$100,001-$150,000",White,Systems Integrator,College degree,Male,White,Yes
+DA21,Parks,Josie,5,M,Black/African-American,.,H.S. degree,Male,3,"$20,001-$40,000",Black/African-American,.,H.S. degree,Female,Black/African-American,No
+DA22,Zoom,Rachael,5,F,White,Administrative Assistant,College degree,Female,5,"$60,001-$80,000",White,Business owner,College degree,Male,White,No
+DA23,Museum,Kaiah,4,M,.,.,.,.,.,.,.,.,.,.,.,.
+DA24,Zoom,Rachael,5,M,White,.,Graduate degree,Female,.,"$80,001-$100,000",Asian/Pacific Islander,.,Graduate degree,Male,Multi-racial/ethnic,No
+DA25,Zoom,Rachael,5,M,Hispanic,.,College degree,Female,6,"< $20,000",.,.,.,.,Hispanic,Yes
+DA26,Zoom,Rachael,4,F,.,.,.,.,3,.,.,.,.,.,.,Yes
+DA27,Zoom,Rachael,4,F,White,Nonprofit management,Graduate degree,Male,3,"$100,001-$150,000",Black/African-American,Nonprofit operations,Graduate degree,Female,Multi-racial/ethnic,Yes
+DB01,Parks,Josie,7,F,Hispanic,.,Some college,Female,4,"$80,001-$100,000",.,.,.,.,.,.
+DB02,Parks,Josie,6,M,White,Self-employed,College degree,Female,5,"$150,001-$200,000",White,Self-Employed,College degree,Male,White,No
+DB03,Parks,Josie,7,M,White,.,Graduate degree,Male,3,"$80,001-$100,000",White,.,Graduate degree,Female,White,No
+DB04,Parks,Josie,7,M,White,.,H.S. degree,Female,3,"$100,001-$150,000",White,.,.,Male,White,No
+DB05,Zoom,Rachael,6,F,Asian/Pacific Islander,.,Graduate degree,Female,3,"$40,001-$60,000",.,.,.,.,Asian/Pacific Islander,Yes
+DB06,Zoom,Kate,6,M,Asian/Pacific Islander,Clinical Pharmacist,Graduate degree,Female,5,.,White,Registered Nurse,College degree,Male,Multi-racial/ethnic,Yes
+DB07,Parks,Josie,7,F,White,.,.,Female,4,.,White,.,College degree,Male,White,No
+DB08,Parks,Josie,7,M,White,Speech Pathologist,Graduate degree,,4,"$200,001-$250,000",White,Finance,Graduate degree,Male,White,No
+DB09,Parks,Josie,6,F,Asian/Pacific Islander,.,H.S. degree,Male,3,"$20,001-$40,000",Asian/Pacific Islander,.,Less than highschool degree,Female,Asian/Pacific Islander,No
+DB10,Parks,Josie,6,F,.,.,.,.,.,.,.,.,.,.,.,.
+DB11,Parks,Josie,6,M,White,.,College degree,Female,4,"$150,001-$200,000",White,.,College degree,Male,White,No
+DB12,Parks,Josie,7,F,White,CEO,College degree,Male,5,"> $500,000",White,Finance,College degree,Female,White,No
+DB13,Parks,Kate,7,M,White,Teacher,Graduate degree,Male,4,"$150,001-$200,000",White,Teacher,Graduate degree,Female,White,No
+DB14,Parks,Kate,7,F,South Asian/Indian,Manager,Graduate degree,Female,6,"> $500,000",South Asian/Indian,CEO,Graduate degree,Male,South Asian/Indian,No
+DB15,Zoom,Rachael,7,F,White, Billing assistant ,College degree,Female,5,.,White,Provo agent,H.S. degree,Male,White,Yes
+DB16,Zoom,Rachael,6,F,Asian/Pacific Islander,.,Graduate degree,Female,5,"> $500,000",Asian/Pacific Islander,Engineer,Graduate degree,Male,Asian/Pacific Islander,Yes
+DB17,Zoom,Kate,6,M,White,.,College degree,Female,5,"$80,001-$100,000",White,.,College degree,Male,White,Yes
+DB18,Zoom,Josie,6,M,Multi-racial/ethnic,disabled stay at home mom, Some college,.,3,"< $20,000",Black/African-American,PhD Candidate,Graduate degree,Male,Multi-racial/ethnic,Yes
+DB19,Zoom,Rachael,7,M,White,Administrative Assistant,College degree,Female,5,"$60,001-$80,000",White,Business owner,College degree,Male,White,No
+DB20,Zoom,Josie,7,M,White,Student/Parent,Some college,Female,5,"< $20,000",.,.,.,.,White,Yes
+DB21,Zoom,Josie,7,F,Asian/Pacific Islander,I choose not to answer this question,  H.S. degree,Female,5,"$20,001-$40,000",.,.,.,.,.,Yes
+DB22,Zoom,Griffin,7,F,White,.,Graduate degree,Male,4,.,White,.,Graduate degree,Female,White,Yes
+DB23,Museum,Josie,7,F,Asian/Pacific Islander,.,H.S. degree,Female,5,.,Asian/Pacific Islander,.,H.S. degree,Male,Asian/Pacific Islander,No
+DB24,Zoom,Kaiah,6,M,Multi-racial/ethnic,Dental hygeniest,College degree,Female,5,.,White,health care,Graduate degree,Male,Multi-racial/ethnic,Yes
+DB25,Zoom,Sarah,6,M,American Indian/Alaskan Native,Clerk,College degree,Female,4,"$60,001-$80,000",White,Caretaker,Some college,Male,White,No
+DB26,Museum,Josie,6,M,White,higher ed administration,Graduate degree,Female,4,"$250,001-$500,000",White,Technology Product Management,Graduate degree,,White,No
+DB27,Museum,Josie,6,M,White,Architect/current stay at home mom,Graduate degree,Female,4,"> $500,000",White,finance,College degree,Male,White,No
+DB28,Zoom,Rachael,6,F,White,Teacher,College degree,Female,4,"$100,001-$150,000",White,Software engineer,College degree,Male,White,Yes
+EA01,Zoom,Rachael,4,F,Asian/Pacific Islander,Software engineer,Graduate degree,Female,4,"> $500,000",White,Software engineer,Graduate degree,Male,Multi-racial/ethnic,Yes
+EA02,Parks,Josie,5,F,White,Stay at home parent,College degree,Female,4,"$100,001-$150,000",White,Buisness Lead,Graduate degree,Male,Multi-racial/ethnic,No
+EA03,Zoom,Rachael,5,M,Multi-racial/ethnic,Stay at home parent,Graduate degree,Female,3,"$200,001-$250,000",White,Engineer,H.S. degree,Male,White,No
+EA04,Parks,Kaiah,4,M,White,Comedian,College degree,Male,,"$200,001-$250,000",.,.,.,.,.,No
+EA05,Parks,Kaiah,4,M,White,.,College degree,Female,2,.,.,.,.,,White,No
+EA06,Zoom,Rachael,4,M,White,.,College degree,Female,3,"$60,001-$80,000",Asian/Pacific Islander,.,Graduate degree,Male,Multi-racial/ethnic,.
+EA07,Parks,Josie,5,F,.,.,.,.,.,.,.,.,.,.,.,.
+EA08,Zoom,Rachael,5,F,Black/African-American,Teacher,Graduate degree,Female,5,"$100,001-$150,000",Black/African-American,Computer engineer,College degree,Female,Black/African-American,Yes
+EA09,Zoom,Kate,4,M,South Asian/Indian,.,College degree,Female,4,"$60,001-$80,000",Asian/Pacific Islander,Engineer,Graduate degree,Male,Asian/Pacific Islander,.
+EA10,Zoom,Sarah,5,F,White,"Business owner, & adjunct professor",Graduate degree,Female,4,.,White,Manager (Grocery Store),College degree,Male,White,Yes
+EA11,Zoom,Rachael,4,M,White,Professor,Graduate degree,Female,3,"$60,001-$80,000",.,.,.,.,White,Yes
+EA12,Zoom,Josie,5,M,White,Occupational therapist ,Graduate degree,Female,5,"$200,001-$250,000",White,Contractor,H.S. degree,Male,White,No
+EA13,Zoom,Sarah,5,M,Asian/Pacific Islander,Administrator,Graduate degree,Female,3,"$250,001-$500,000",White,Consultant,Graduate degree,Male,Multi-racial/ethnic,Yes
+EA14,Zoom,Josie,5,F,White,Rn,College degree,Female,5,"$100,001-$150,000",White,Superintendent ,College degree,Male,White,No
+EA15,Zoom,Josie,5,M,Asian/Pacific Islander,Homeschool parent,College degree,Female,5,"$80,001-$100,000",White,Videographer,College degree,Male,Multi-racial/ethnic,Yes
+EA16,Zoom,Kaiah,4,M,Multi-racial/ethnic,Dental hygeniest,College degree,Female,5,"$200,001-$250,000",White,health care,Graduate degree,,Multi-racial/ethnic,Yes
+EA17,Museum,Josie,5,F,.,.,.,.,.,.,.,.,.,.,.,.
+EA18,Zoom,Kaiah,5,M,White,Resource Specialist- Government ,College degree,Female,4,"$20,001-$40,000",.,.,.,.,White,Yes
+EA19,Zoom,Sarah,5,M,White,management consultant,Graduate degree,Female,3,"> $500,000",White,attorney,Graduate degree,Male,White,Yes
+EA20,Zoom,Josie,4,M,White,Physician,Graduate degree,Female,4,"$250,001-$500,000",White,Physician,Graduate degree,Male,White,Yes
+EA21,Zoom,Josie,4,M,White,Research Manager,Graduate degree,Female,4,"$100,001-$150,000",White,Teacher,Graduate degree,Male,White,Yes
+EA22,Zoom,Sarah,5,F,White,Public Health,Graduate degree,Female,4,.,White,Engineer,Graduate degree,Male,White,Yes
+EA23,Museum,Josie,4,F,White,Professor (nursing),Graduate degree,Female,4,"$150,001-$200,000",.,.,,.,.,.
+EA24,Zoom,Rachael,4,F,White,Stay at home mom,Graduate degree,Female,5,"< $20,000",White,Student,Graduate degree,Male,White,Yes
+EA25,Zoom,Rachael,5,F,Hispanic,Secretary,Some college,Female,3,"$40,001-$60,000",Hispanic,E-commerce,Some college,Male,Hispanic,Yes
+EB01,Zoom,Josie,6,F,White,Homemaker,College degree,Female,5,"$100,001-$150,000",White,Mechanical Engineer,College degree,Male,White,Yes
+EB02,Zoom,Kaiah,6,M,Asian/Pacific Islander,Multimedia Specialist,Graduate degree,Female,5,"$200,001-$250,000",White,Enterprise Architect,Some college,Male,Multi-racial/ethnic,Yes
+EB03,Parks,Kaiah,6,M,.,.,.,.,.,.,.,.,.,.,.,.
+EB04,Zoom,Rachael,7,F,White,.,Graduate degree,Female,4,"$250,001-$500,000",White,.,College degree,Male,White,Yes
+EB05,Zoom,Rachael,6,F,Asian/Pacific Islander,Software engineer,Graduate degree,Female,4,"> $500,000",White,Software engineer,Graduate degree,Male,Multi-racial/ethnic,Yes
+EB06,Zoom,Rachael,7,M,White,.,.,Female,4,.,White,.,.,Male,White,Yes
+EB07,Zoom,Kaiah,6,M,White,.,Graduate degree,Female,5,"$250,001-$500,000",White,.,Graduate degree,Male,White,Yes
+EB08,Zoom,Kaiah,7,F,White,Homemaker,Graduate degree,Female,4,"$100,001-$150,000",.,.,.,.,White,Yes
+EB09,Parks,Josie,7,F,White,Pastor,Graduate degree,Male,6,"$150,001-$200,000",White,.,College degree,Female,White,No
+EB10,Zoom,Kate,6,F,Hispanic,Employee,College degree,Female,5,"$80,001-$100,000",Hispanic,Employee,College degree,Male,Hispanic,Yes
+EB11,Zoom,Kate,7,F,South Asian/Indian,.,College degree,Female,4,"$60,001-$80,000",Asian/Pacific Islander,Engineer,Graduate degree,Male,South Asian/Indian,.
+EB12,Zoom,Kate,7,F,White,.,College degree,Female,4,"$60,001-$80,000",White,.,College degree,Male,White,Yes
+EB13,Zoom,Rachael,7,M,Asian/Pacific Islander,Teacher,Graduate degree,Female,3,"$250,001-$500,000",White,Physicist,Graduate degree,Male,Multi-racial/ethnic,Yes
+EB14,Zoom,Rachael,6,M,White,Professor,Graduate degree,Female,3,"$60,001-$80,000",.,.,.,.,White,Yes
+EB15,Zoom,Rachael,7,M,Asian/Pacific Islander,Translation Coordinator,College degree,Female,3,.,White,Sales Manager,Graduate degree,Male,Multi-racial/ethnic,Yes
+EB16,Zoom,Rachael,7,M,White,Stay at home mom,College degree,Female,4,"$200,001-$250,000",White,Project manager,College degree,Male,White,Yes
+EB17,Zoom,Kate,6,Other - Non-binary trans femme,White,Homeschool mother/non working degreed librarian,Graduate degree,Female,4,"$40,001-$60,000",White,Freelance audio visual editor/tv producer ,College degree,Male,White,Yes
+EB18,Zoom,Josie,6,F,Multi-racial/ethnic, Social worker,Graduate degree,Female,5,"$100,001-$150,000",White, Police officer,Some college,Male,White,No
+EB19,Zoom,Kaiah,6,M,Multi-racial/ethnic,Student,Less than highschool degree,Male,2,"$20,001-$40,000",Multi-racial/ethnic,Software Engineer,College degree,Male,Multi-racial/ethnic,No
+EB20,Zoom,Josie,7,F,White,Bioinformatician,Graduate degree,Female,4,"$200,001-$250,000",White,Assistant professor,Graduate degree,Male,White,Yes
+EB21,Zoom,Kaiah,6,M,Asian/Pacific Islander,Teacher,Graduate degree,Female,4,"$80,001-$100,000",.,,.,,Asian/Pacific Islander,no
+EB22,Zoom,Kate,7,M,Asian/Pacific Islander,Case manager,Some college,Female,4,"$40,001-$60,000",.,.,.,.,Asian/Pacific Islander,No
+EB23,Zoom,Josie,7,F,Asian/Pacific Islander,Homeschool parent,College degree,Female,5,"$80,001-$100,000",White,Videographer,College degree,Male,Multi-racial/ethnic,Yes
+EB24,Zoom,Josie,6,M,White,Home,College degree,Female,4,"$250,001-$500,000",White,FinNce,Graduate degree,Male,White,Yes
+EB26,Museum,Kaiah,6,F,White,Attorny,Graduate degree,Male,4,"$150,001-$200,000",White,Attorny,Graduate degree,Female,White,No
+EB27,Museum,Josie,6,M,White,Science Educator,Graduate degree,Male,4,"$100,001-$150,000",White,Non-profit development,Graduate degree,Female,White,No
+EB28,Zoom,Rachael,6,F,Asian/Pacific Islander,Scientist,Graduate degree,Female,5,"$150,001-$200,000",Asian/Pacific Islander,Scientist,Graduate degree,Male,Asian/Pacific Islander,Yes

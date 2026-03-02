@@ -1,0 +1,290 @@
+---
+title: "Explorative Data Analysis"
+output: html_document
+date: "2026-02-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+  
+```{r}
+library(tidyverse)
+library(stats)
+library(ggplot2)
+```
+
+### Loading data
+```{r}
+demo <- read.csv("slides_demographics_deidentified.csv", header=TRUE, na.strings=".")
+data <- read.csv("slides_data_deidentified.csv", na.strings=".")
+```
+
+## Explorative Data Anayalysis    
+```{r}
+#### Emotion correlations #####
+
+# Correlation matrix for happy, sad, angry, and fairness ratings
+emotions <- data %>%
+  select(happy_1, sad_1, angry_1, fair_1) %>%
+  na.omit()   # remove rows with missing values
+
+emo_cor_matrix <- cor(emotions, use = "complete.obs")
+print(emo_cor_matrix, digits=3)
+emo_cor_melt<-emo_cor_matrix%>%
+  as_tibble(rownames = "Var1")%>%
+  pivot_longer(
+    cols = -Var1,
+    names_to = "Var2",
+    values_to = "value"
+  )
+ggplot(emo_cor_melt, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile() +
+  geom_text(aes(label = round(value, 2)), color = "black", size = 3) +
+  scale_fill_gradient2(low = "blue", high = "green",
+                       midpoint = 0, limit = c(min(emo_cor_melt$value), max(emo_cor_melt$value))) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Covariance Matrix Heatmap",
+       x = "", y = "")
+```
+```{r}
+## the distribution by condition
+data_equal<-data%>%
+  filter(condition=='Equal')
+data_disadvantaged<-data%>%
+  filter(condition=="Disadvantaged")
+score_equal <- data_equal %>% 
+  select(happy_1, sad_1, angry_1, fair_1) %>% 
+  mutate(across(everything(), ~trimws(as.character(.)))) %>% 
+  pivot_longer(everything(), names_to="variable", values_to="rating") %>% 
+  filter(rating %in% c("1","2","3","4")) %>%    
+  mutate(rating = factor(rating, levels=c("1","2","3","4"), ordered=TRUE)) 
+ggplot(score_equal, aes(x = rating)) + 
+  geom_bar(fill = "#FFCCFF") + 
+  facet_wrap(~variable, ncol = 4) + 
+  labs(title = "Round 1 Emotion Ratings In Equal Condition", x = "Rating (1–4)", y = "Count") + 
+  theme_minimal(base_size = 13)
+
+
+
+score_disadvantaged <- data_disadvantaged %>% 
+  select(happy_1, sad_1, angry_1, fair_1) %>% 
+  mutate(across(everything(), ~trimws(as.character(.)))) %>% 
+  pivot_longer(everything(), names_to="variable", values_to="rating") %>% 
+  filter(rating %in% c("1","2","3","4")) %>%    
+  mutate(rating = factor(rating, levels=c("1","2","3","4"), ordered=TRUE)) 
+ggplot(score_disadvantaged, aes(x = rating)) + 
+  geom_bar(fill = "#66CCFF") + 
+  facet_wrap(~variable, ncol = 4) + 
+  labs(title = "Round 1 Emotion Ratings In Disadvantage Condition", x = "Rating (1–4)", y = "Count") + 
+  theme_minimal(base_size = 13)
+```
+
+
+```{r}
+ 
+vars1 <- c("happy_1","sad_1","angry_1","fair_1") 
+vars1_num_condition <- data %>% 
+  mutate(across(all_of(vars1), ~ { 
+    x <- trimws(as.character(.)) 
+    x[x %in% c("", ".", "NA")] <- NA 
+    suppressWarnings(as.numeric(x)) 
+    })) %>% 
+  select(PID, condition, all_of(vars1)) 
+vars1_num_condition %>% 
+  pivot_longer(c(happy_1, sad_1, angry_1, fair_1), 
+    names_to = "emotion", 
+    values_to = "score") %>% 
+ggplot(aes(x = condition, y = score, fill = condition)) +
+  geom_boxplot() + 
+  facet_wrap(~emotion) + 
+  theme_minimal() + 
+  labs(title = "Emotion Ratings by Condition Group") 
+vars1_num_color <- data %>% 
+  mutate(across(all_of(vars1), ~ { 
+    x <- trimws(as.character(.)) 
+    x[x %in% c("", ".", "NA")] <- NA 
+    suppressWarnings(as.numeric(x)) 
+    })) %>% 
+  select(PID, color_choice, all_of(vars1)) 
+vars1_num_color %>% 
+  pivot_longer(c(happy_1, sad_1, angry_1, fair_1), 
+    names_to = "emotion", 
+    values_to = "score") %>% 
+ggplot(aes(x = color_choice, y = score, fill = color_choice)) +
+  geom_boxplot() + 
+  facet_wrap(~emotion) + 
+  theme_minimal() + 
+  labs(title = "Emotion Ratings by Color Group") 
+```
+```{r}
+## the distribution by choice color
+data_green<-data%>%
+  filter(color_choice =='Green')
+data_orange<-data%>%
+  filter(color_choice=="Orange")
+score_green <- data_green %>% 
+  select(happy_1, sad_1, angry_1, fair_1) %>% 
+  mutate(across(everything(), ~trimws(as.character(.)))) %>% 
+  pivot_longer(everything(), names_to="variable", values_to="rating") %>% 
+  filter(rating %in% c("1","2","3","4")) %>%    
+  mutate(rating = factor(rating, levels=c("1","2","3","4"), ordered=TRUE)) 
+ggplot(score_green, aes(x = rating)) + 
+  geom_bar(fill = "green") + 
+  facet_wrap(~variable, ncol = 4) + 
+  labs(title = "Round 1 Emotion Ratings with Color Green", x = "Rating (1–4)", y = "Count") + 
+  theme_minimal(base_size = 13)
+
+
+
+score_orange <- data_orange %>% 
+  select(happy_1, sad_1, angry_1, fair_1) %>% 
+  mutate(across(everything(), ~trimws(as.character(.)))) %>% 
+  pivot_longer(everything(), names_to="variable", values_to="rating") %>% 
+  filter(rating %in% c("1","2","3","4")) %>%    
+  mutate(rating = factor(rating, levels=c("1","2","3","4"), ordered=TRUE)) 
+ggplot(score_orange, aes(x = rating)) + 
+  geom_bar(fill = "orange") + 
+  facet_wrap(~variable, ncol = 4) + 
+  labs(title = "Round 1 Emotion Ratings In Disadvantage Condition", x = "Rating (1–4)", y = "Count") + 
+  theme_minimal(base_size = 13)
+```
+
+
+
+
+```{r}
+correlation_plot<-function(data){
+  emotions <- data %>%
+  select(happy_1, sad_1, angry_1, fair_1) %>%
+  na.omit()   # remove rows with missing values
+
+emo_cor_matrix <- cor(emotions, use = "complete.obs")
+print(emo_cor_matrix, digits=3)
+emo_cor_melt<-emo_cor_matrix%>%
+  as_tibble(rownames = "Var1")%>%
+  pivot_longer(
+    cols = -Var1,
+    names_to = "Var2",
+    values_to = "value"
+  )
+ggplot(emo_cor_melt, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile() +
+  geom_text(aes(label = round(value, 2)), color = "black", size = 3) +
+  scale_fill_gradient2(low = "blue", high = "green",
+                       midpoint = 0, limit = c(min(emo_cor_melt$value), max(emo_cor_melt$value))) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Covariance Matrix Heatmap",
+       x = "", y = "")
+}
+## category by board color
+data%>%
+  filter(color_choice=="Green")%>%
+  correlation_plot()
+data%>%
+  filter(color_choice=="Orange")%>%
+  correlation_plot()
+## category by condition
+data%>%
+  filter(condition=="Disadvantaged")%>%
+  correlation_plot()
+data%>%
+  filter(condition=="Equal")%>%
+  correlation_plot()
+
+## category by board color and condition
+data%>%
+  filter(condition=="Disadvantaged",color_choice=="Green")%>%
+  correlation_plot()
+data%>%
+  filter(condition=="Disadvantaged",color_choice=="Orange")%>%
+  correlation_plot()
+data%>%
+  filter(condition=="Equal",color_choice=="Green")%>%
+  correlation_plot()
+data%>%
+  filter(condition=="Equal",color_choice=="Orange")%>%
+  correlation_plot()
+```
+
+
+```{r}
+
+```
+
+
+
+```{r justice-related affect PCA}
+
+#-------------------------------------------------------------
+# 1. Build PCA input, quick data checks
+#-------------------------------------------------------------
+jra_vars <- c("happy_1", "sad_1", "angry_1", "fair_1")
+
+# Keep only the columns we need, drop rows with any missingness
+jra_data <- data %>%
+  select(all_of(jra_vars)) %>%
+  na.omit()
+
+# Descriptive check (spot miscoded scales / floor/ceiling)
+summary(jra_data)
+# Correlation matrix to check expected signs (happy/fair +; sad/angry -)
+round(cor(jra_data), 2)
+
+
+#-------------------------------------------------------------
+# 2. Run PCA with scaling (standardizes variables to mean 0, SD 1)
+#    prcomp returns loadings in $rotation and scores in $x
+#-------------------------------------------------------------
+jra_pca <- prcomp(jra_data, scale. = TRUE)
+
+# Variance explained by components
+pca_summary <- summary(jra_pca)
+pca_summary
+
+# Loadings: contribution of each variable to each PC
+loadings <- jra_pca$rotation
+round(loadings, 3)
+
+# Scree plot: variance explained per component (visual elbow)
+plot(jra_pca, type = "l", main = "Scree Plot: JRA PCA")
+```
+```{r}
+#-------------------------------------------------------------
+# 1. Build PCA input, quick data checks, divided by conditions
+#-------------------------------------------------------------
+jra_vars <- c("happy_1", "sad_1", "angry_1", "fair_1")
+
+# Keep only the columns we need, drop rows with any missingness
+jra_data_disadvantage <- data %>%
+  filter(condition=="Disadvantaged")%>%
+  select(all_of(jra_vars)) %>%
+  na.omit()
+
+jra_pca_disadvantage <- prcomp(jra_data_disadvantage, scale. = TRUE)
+
+# Variance explained by components
+pca_summary_disadvantage <- summary(jra_pca_disadvantage)
+pca_summary_disadvantage
+
+jra_vars <- c("happy_1", "sad_1", "angry_1", "fair_1")
+
+
+# Keep only the columns we need, drop rows with any missingness
+jra_data_equal <- data %>%
+  filter(condition=="Equal")%>%
+  select(all_of(jra_vars)) %>%
+  na.omit()
+
+jra_pca_equal <- prcomp(jra_data_equal, scale. = TRUE)
+
+# Variance explained by components
+pca_summary_equal <- summary(jra_pca_equal)
+pca_summary_equal
+
+```
+
+
+
